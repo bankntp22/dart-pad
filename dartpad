@@ -1,0 +1,68 @@
+void main(){
+  var volume = cylinderVVolume(circleArea(10),15); 
+  print('cylinder volume : $volume');
+  
+  sumInput(123 , 213);
+  
+  const myPi = 3.143;
+  const r = 24;
+  const myArea = myPi * r * r;
+  print('คำตอบของ $myPi กับ $r เท่ากับ $myArea');
+  addNumbers();
+  customer('Gap',);
+  customer('Bank',email : 'bank.ntp132@gmail.com');
+  customer('Gap',email : 'bank.ntp22@gmail.com',phone : '0-13123-2810');
+  
+  var list = ['apples', 'bananas', 'oranges'];
+  for(var item in list) {
+    print('${list.indexOf(item)}: $item');
+  } 
+  
+  
+  var list2 = ['iphone','nokia','samsung'];
+  for(var item in list2) {
+    print('${list2.indexOf(item)}: $item');
+    
+  }
+  
+  var list3 = ['apples12', 'bananas31', 'orange4s1'];
+  list3.forEach((item) => print('${list3.indexOf(item)}: $item'));
+  // (item) => print('${list.indexOf(item)}: $item')
+  
+  
+}
+
+
+double circleArea(double radius){
+  return 3.14159 * (radius * radius);
+}
+
+double cylinderVVolume(double height , double area){
+  return height * area;
+}
+
+double sumInput(double first , double second){
+  var result = first + second;
+  print('ผลรวมของ $first กับ $second เท่ากับ $result');
+  return first + second;
+  
+}
+
+void customer(String name ,{bool graduted = false , String phone ='-', String email = '-'}){
+  
+  var customDetail = """
+  Name  : $name
+  Graduated : $graduted
+  Phone : $phone
+  Email : $email
+  """;
+  print(customDetail);
+}
+
+addNumbers(){
+  int fir =125;
+  int sec =1009;
+  var result = fir + sec;
+  print('ผลรวมของ $fir กับ $sec คือ = $result');  
+}
+
